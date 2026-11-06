@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Seth Strawbridge</title>
+    <meta
+      name="description"
+      content="Seth Strawbridge, PharmD. Clinical and health-data background, self-taught software. Source for ClearScout and pressume."
+    />
+    <link rel="icon" href="/clearscout/clearscout-mark.svg" type="image/svg+xml" />
+    <style>
+      :root {
+        --bg: #0b131b;
+        --panel: #111c26;
+        --line: #22313f;
+        --text: #e6edf3;
+        --muted: #9fb0c0;
+        --teal: #0e9888;
+        --link: #9b8cff;
+      }
+      @media (prefers-color-scheme: light) {
+        :root {
+          --bg: #f7f9fb;
+          --panel: #ffffff;
+          --line: #d8e0e8;
+          --text: #0e1720;
+          --muted: #4a5b6b;
+          --link: #5443e0;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      }
+      a {
+        color: var(--link);
+      }
+      a:focus-visible {
+        outline: 2px solid var(--teal);
+        outline-offset: 2px;
+      }
+      main {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 64px 20px 32px;
+      }
+      h1 {
+        font-size: 40px;
+        line-height: 1.15;
+        margin: 0 0 8px;
+        letter-spacing: -0.02em;
+      }
+      .lead {
+        font-size: 20px;
+        color: var(--muted);
+        margin: 0 0 28px;
+      }
+      h2 {
+        font-size: 24px;
+        margin: 48px 0 16px;
+      }
+      .card {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-left: 4px solid var(--teal);
+        border-radius: 10px;
+        padding: 20px 22px;
+        margin: 0 0 16px;
+      }
+      .card h3 {
+        margin: 0 0 6px;
+        font-size: 20px;
+      }
+      .card p {
+        margin: 0 0 10px;
+      }
+      .card .meta {
+        color: var(--muted);
+        font-size: 15px;
+      }
+      .links a {
+        margin-right: 16px;
+      }
+      footer {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 24px 20px 48px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Seth Strawbridge</h1>
+      <p class="lead">PharmD. Clinical and health-data domain expertise. Self-taught software.</p>
+
+      <p>
+        My background is pharmacy, clinical informatics, and biomedical data. I taught myself to
+        build software, and I build tools for problems I have myself.
+      </p>
+      <p>
+        My rule for those tools is simple. A model can help, but it should not be trusted to state
+        facts it cannot point to. The program should own the facts, and a person should be able to
+        check the source behind every claim.
+      </p>
+
+      <h2>Projects</h2>
+
+      <article class="card">
+        <h3>ClearScout</h3>
+        <p>
+          A local, open-source job-search workspace. It scans employers' own job boards for free,
+          compares postings with one master CV, and drafts resumes and cover letters. Anti-fabrication
+          is the point: a model may cite only evidence that exists in the CV selected for that run,
+          and the program copies titles, employers, and dates verbatim.
+        </p>
+        <p class="meta">Python. Apache-2.0. Alpha.</p>
+        <p class="links">
+          <a href="https://sethstraw.github.io/clearscout/">ClearScout site</a>
+          <a href="https://github.com/sethstraw/clearscout">ClearScout source on GitHub</a>
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>pressume</h3>
+        <p>
+          Renders resumes and CVs from portable Markdown to PDF, plain text, and Word. It then
+          reopens the output and checks it: page count, text order, links, dates, and accessibility
+          tags. It does not score or tailor a resume.
+        </p>
+        <p class="meta">Python. MIT.</p>
+        <p class="links">
+          <a href="https://sethstraw.github.io/pressume/">pressume site</a>
+          <a href="https://github.com/sethstraw/pressume">pressume source on GitHub</a>
+        </p>
+      </article>
+
+      <h2>Contact</h2>
+      <p>
+        Find me on GitHub at <a href="https://github.com/sethstraw">github.com/sethstraw</a>.
+      </p>
+    </main>
+    <footer>
+      This page is plain HTML.
+      <a href="https://github.com/sethstraw/sethstraw.github.io">Page source on GitHub</a>.
+    </footer>
+  </body>
+</html>
